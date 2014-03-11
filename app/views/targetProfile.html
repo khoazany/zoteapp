@@ -1,0 +1,83 @@
+<head>
+  <link rel="stylesheet" href="styles/targetProfile.css">
+</head>
+<body>
+  <div id="wrapper" class="active">
+
+    <!-- Sidebar -->
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul id="sidebar_menu" class="sidebar-nav">
+       <li class="sidebar-brand"><a id="menu-toggle" href="#">Home<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+     </ul>
+     <ul class="sidebar-nav" id="sidebar">     
+      <li><a>Zote!<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+      <li><a href="/#/result">Result <span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+    </ul>
+  </div>
+
+  <!-- Page content -->
+  <div id="page-content-wrapper">
+    <!-- Keep all page content within the page-content inset div! -->
+    <div class="page-content inset">
+      <div class="container">
+          <br>
+          <div class="well" style="background-image: url(/../images/jenny_cover.jpg);">
+              <center>
+                <a href="https://www.facebook.com/jenny.ly.93?fref=ts"><img src="images/jenny.jpg" width="90" height="120" class="img-circle"></a>
+                <h3>Jenny Lý Phương Dung</h3>
+                <em>School of Business</em>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="range range-warning">
+                      <title>Ngoại hình</title>
+                      <input type="range" name="range" min="1" max="100" value="50" onchange="rangeWarning.value=value">
+                      <output id="rangeWarning">50</output>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="range range-info">
+                      <title>Tính cách</title>
+                      <input type="range" name="range" min="1" max="100" value="50" onchange="rangePrimary.value=value">
+                      <output id="rangeInfo">50</output>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="range range-success">
+                      <title>Độ thân thiết giữa bạn với người này</title>
+                      <input type="range" name="range" min="1" max="100" value="50" onchange="rangeSuccess.value=value">
+                      <output id="rangeSuccess">50</output>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="range range-primary">
+                      <title>Tỉ lệ giữa tình bạn / tình yêu</title>
+                      <input type="range" name="range" min="1" max="100" value="50" onchange="rangePrimary.value=value">
+                      <output id="rangePrimary">50</output>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+                <div class="panel panel-default">
+                <div class="panel-body">                
+                    <form accept-charset="UTF-8" action="/#/" method="GET">
+                        <textarea class="form-control counted" name="message" placeholder="Type in your confession" rows="5" style="margin-bottom:10px;"></textarea>
+                        <h6 class="pull-right" id="counter">320 characters remaining</h6>
+                        <button class="btn btn-info btn-submit" type="submit">Send this confession</button>
+                    </form>
+                </div>
+            </div>
+              </center>
+
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/targetProfile.js"></script>
+</body>
