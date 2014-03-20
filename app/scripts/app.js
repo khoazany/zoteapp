@@ -12,7 +12,7 @@ angular.module('gstApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/user/jenny', {
+      .when('/user', {
         templateUrl: 'views/targetProfile.html',
         controller: 'MainCtrl'
       })
